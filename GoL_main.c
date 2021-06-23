@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 	srand(time(NULL));	
 	struct sigaction sa_int, sa_term;
 	if(argc != 2){
-		fprintf(stderr, "Use: %s <number_of_entities>\n", argv[0]);
+		fprintf(stderr, "Usage: %s <number_of_entities>\n", argv[0]);
 		return ARG_ERR;
 	}
 	/* One handler per signal */
