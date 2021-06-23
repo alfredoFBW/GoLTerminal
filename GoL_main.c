@@ -84,7 +84,6 @@ int main(int argc, char *argv[])
 		world_step();	
 		if(nanosleep(req, NULL) == -1){
 			int errsv = errno;
-			perror("Error with nanosleep ");
 			if((errsv == EFAULT) || (errsv == EINVAL)){
 				perror("Error with nanosleep ");
 				free(req);
