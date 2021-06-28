@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -g
-LFLAGS = -lm
+LFLAGS = 
 
 PROG = terminalGoL 
 OBJPROG = GoL_main.o GoL_func.o GoL_pattern.o
