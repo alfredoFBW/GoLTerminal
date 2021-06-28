@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <math.h>
 #include "GoL_func.h"
 #include "GoL_pattern.h"	
 
@@ -21,8 +20,11 @@ void conv2_same()
 	int pmin, pmax, qmin, qmax;
 	int tmp;
 	int row, col;
-	row = (int)(floor(K_ROW/2.0));
-	col = (int)(floor(K_ROW/2.0));
+	/* Just use C division */
+	/*row = (int)(floor(K_ROW/2.0));
+	col = (int)(floor(K_COL/2.0));*/
+	row = K_ROW/2;
+	col = K_COL/2;
 	for(m = 0, r = 0; m < CONV_ROW; m++){
 		for(n = 0, s = 0; n < CONV_COL; n++){
 			tmp = 0;
