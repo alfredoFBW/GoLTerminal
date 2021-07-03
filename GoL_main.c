@@ -9,9 +9,9 @@
 #include "GoL_func.h"
 
 
-#define ARG_ERR 1
-#define MALLOC_ERR 2
-#define SIGNAL_ERR 3
+#define ARG_ERR -1
+#define MALLOC_ERR -2
+#define SIGNAL_ERR -3
 #define AUTHOR "Alfredo Gonzalez Calvin"
 
 extern char world[M_ROW][M_COL];
